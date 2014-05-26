@@ -28,7 +28,7 @@
                 android:text="@string/first_name" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/edtFirst"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
@@ -46,7 +46,7 @@
                 android:text="@string/family_name" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/edtFamily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
@@ -55,22 +55,37 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btnOK"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ok" />
+
+        <Button
+            android:id="@+id/btnCancel"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_cancel" />
 
-        <Button
-            android:id="@+id/button2"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="66dp"
-            android:layout_height="wrap_content"
-            android:text="@string/button_ok" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
     </LinearLayout>
 
 </LinearLayout>
