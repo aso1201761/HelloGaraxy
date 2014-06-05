@@ -83,7 +83,7 @@
             android:id="@+id/txvMsg"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:text="Large Text"
+            android:text="@string/large_text"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>
